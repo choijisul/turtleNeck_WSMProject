@@ -1,0 +1,88 @@
+
+
+p {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
+main button {
+    width: 28%;
+    height: 30%;
+    border-radius: 30px;
+    margin: 7px;
+    background-color: #cbd7f1;
+    border: 0;
+}
+
+main img{
+    height: 210;
+    width: 230;
+}
+
+/*이미지 크기 바꾸기*/
+@media screen and (max-width: 1100px){
+
+    main button {
+        width: 30%;
+        height: 30%;
+        border-radius: 30px;
+        margin: 7px;
+        background-color: #cbd7f1;
+        border: 0;
+    }
+    
+    main img{
+        height: 190;
+        width: 215;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 720px){
+    p{
+        font-size: 1.7rem;
+    }
+    
+    main button {
+        width: 45%;
+        height: 32%;
+        border-radius: 30px;
+        margin: 7px;
+        background-color: #cbd7f1;
+        border: 0;
+    }
+    
+    main img{
+        height: 200;
+        width: 240;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    p{
+        font-size: 1.5rem;
+    }
+
+    main button {
+        width: 80%;
+        height: 20%;
+        border-radius: 30px;
+        margin-left: 50px;
+        margin: 7px;
+        background-color: #cbd7f1;
+    }
+    
+    main img{
+        margin-top: 5px;
+        height: 130;
+        width: 150;
+    }
+}

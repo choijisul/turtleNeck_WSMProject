@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 화면</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="css/calenderStyle.css">
+    <script>
+        // 달력
+        window.onload = function () {
+            drawCalendar();
+        };
+
+        function drawCalendar() {
+            var date = new Date();
+            // Date의 getMonth()는 1월이 0, 
+            var firstDate = new Date(date.getFullYear(), date.getMonth(), 1);
+            var lastDate = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+            var firstDay = firstDate.getDate();
+            var lastDay = lastDate.getDate();
+            var firstWeekDay = firstDate.getDay();
+            var lastWeekDay = lastDate.getDay();
+
+            var startDayOfCalendar = 1 - firstWeekDay;
+            var calendarBodyHtml = "";
+            for (var day = startDayOfCalendar; day <= lastDay; day += 7) {
+                calendarBodyHtml += "<tr>";
+                for (var weekDay = day; weekDay < day + 7; weekDay++) {
+                    var dayClass = "dayn";
+                    if (weekDay === day) {
+                        dayClass = "day0";
+                    } else if (weekDay === day + 6) {
+                        dayClass = "day6";
+                    }
+                    if (weekDay < 1 || weekDay > lastDay) {
+                        calendarBodyHtml += "<td class='" + dayClass + "'></td>";
+                    } else {
+                        calendarBodyHtml += "<td class='" + dayClass + "'>" + weekDay + "</td>";
+                    }
+                }
+                calendarBodyHtml += "</tr>";
+            }
+            var calendarBodyDom = document.getElementById("calendarDays");
+            calendarBodyDom.innerHTML = calendarBodyHtml;
+        }
+        // 출석체크 알림
+        function btn() {
+            alert('출석체크 완료');
+        }
+    </script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="container">
+            <h1>
+                <p><button onClick="location.href='index.html'"><img src="./img/logo1.png"></button>
+                    탈출! 거북목</p>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <button class="" onClick="location.href='page1.html'"><img src="img/btn1.png"></button>
+                    </li>
+                    <li>
+                        <button class="" onClick="location.href='neck_machinePage.html'"><img src="img/btn2.png"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <button onclick="javascript:btn()">출석체크</button>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th class="day0">&nbsp;SUN&nbsp;</th>
+                        <th>MON</th>
+                        <th>&nbsp;TUE&nbsp;</th>
+                        <th>WED</th>
+                        <th>&nbsp;THU</th>
+                        <th>&nbsp;&nbsp;FRI&nbsp;</th>
+                        <th class="day6">&nbsp;SAT&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarDays">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

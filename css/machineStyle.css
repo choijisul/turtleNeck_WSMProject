@@ -1,0 +1,133 @@
+/* 운동기구 페이지 */
+/*위 버튼*/
+.wrap-vertical {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 10px;
+    overflow: scroll;
+    border-bottom: 3px solid #3e73a1;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.wrap-vertical button {
+    border-radius: 30px;
+    background-color: #cbd7f1;
+    width: 13rem;
+    height: 6rem;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.wrap-vertical img {
+    height: 80;
+    width: 130;
+}
+
+@media screen and (max-width: 720px) {
+    .wrap-vertical button {
+        border-radius: 23px;
+        background-color: #cbd7f1;
+        width: 11rem;
+        height: 5.5rem;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .wrap-vertical img {
+        height: 70;
+        width: 110;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .wrap-vertical button {
+        border-radius: 17px;
+        background-color: #cbd7f1;
+        width: 9rem;
+        height: 5rem;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .wrap-vertical img {
+        height: 70;
+        width: 110;
+    }
+}
+
+/*이미지, 글*/
+
+a {
+    color: black;
+    text-decoration: underline #cbd7f1;
+}
+
+main{
+    text-align: center;
+    display: block;
+    font-size: 1.3rem;
+}
+
+main p {
+    margin-top: 5px;
+}
+
+.product-list {
+    width: 1210px;
+    margin: auto;
+}
+.product-detail {
+    margin-top: 30px;
+    width: 400px;
+    float: left;
+}
+main img {
+    height: 200px;
+    /* width: 90%; */
+    width: 350px;
+    align-items: end;
+}
+
+@media screen and (max-width: 720px){
+    main{
+        text-align: center;
+        display: block;
+        font-size: 1rem;
+    }
+    
+    .product-list {
+        width: 560px;
+        margin: auto;
+    }
+    .product-detail {
+        margin-top: 40px;
+        width: 280px;
+        float: left;
+    }
+    main img {
+        height: 150px;
+        width: 90%;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 540px){
+    main{
+        text-align: center;
+        display: block;
+    }
+    
+    .product-list {
+        width: 450px;
+        margin: auto;
+    }
+    .product-detail {
+        margin-top: 30px;
+        width: 440px;
+        float: left;
+    }
+    main img {
+        height: 220px;
+        width: 90%;
+        align-items: end;
+    }
+}

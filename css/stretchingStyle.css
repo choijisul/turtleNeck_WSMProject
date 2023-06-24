@@ -1,0 +1,223 @@
+/* 신체선택 */
+/* body {
+    font-family: "굴림체";
+} */
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+section1 {
+    margin-top: 3%;
+    float: left;
+    width: 43%;
+    height: 37%;
+    text-align: right;
+}
+
+section1 img {
+    margin-right: 6%;
+    width: 300;
+    height: 270;
+}
+
+/*이미지 크기 조정*/
+@media screen and (max-width: 880px) {
+    section1 img {
+        margin-top: 20px;
+        margin-right: 10px;
+        width: 270;
+        height: 245;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 720px) {
+    h1 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    section1 {
+        float: left;
+        width: 43%;
+        height: 27%;
+        margin-top: 2%;
+        text-align: right;
+    }
+
+    section1 img {
+        margin-top: 0px;
+        margin-right: 10px;
+        width: 205;
+        height: 180;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 540px) {
+    h1 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    section1 {
+        float: left;
+        width: 44%;
+        height: 20%;
+        margin-top: 2%;
+        text-align: right;
+    }
+
+    section1 img {
+        margin-top: 0px;
+        margin-left: 20px;
+        width: 170;
+        height: 140;
+    }
+
+}
+
+
+section2 {
+    float: right;
+    width: 56%;
+    height: 37%;
+    margin-top: 5%;
+    font-size: 1.9rem;
+}
+
+section2 p {
+    margin-bottom: 7px;
+}
+
+section2 button {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: #cbd7f1;
+    width: 200px;
+    height: 40px;
+    margin-top: 70px;
+}
+
+
+/*tablet*/
+@media screen and (max-width: 720px) {
+    section2 {
+        float: right;
+        width: 55%;
+        height: 27%;
+        margin-top: 2%;
+        font-size: 1.7rem;
+    }
+
+    section2 button {
+        text-align: center;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        background-color: #cbd7f1;
+        width: 170px;
+        height: 36px;
+        margin-top: 15px;
+    }
+
+    section2 p {
+        margin-bottom: 10px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 540px) {
+    section2 {
+        float: right;
+        width: 55%;
+        height: 20%;
+        margin-top: 2%;
+        font-size: 1.3rem;
+    }
+
+    section2 button {
+        text-align: center;
+        border-radius: 15px;
+        font-size: 1rem;
+        background-color: #cbd7f1;
+        width: 150px;
+        height: 30px;
+        margin-top: 4px;
+    }
+
+    section2 p {
+        margin-bottom: 10px;
+    }
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+table img {
+    width: 250px;
+    height: 250px;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 2px solid;
+    padding: 30px;
+    font-size: 1.05em;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 720px) {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+    }
+
+    table img {
+        width: 170px;
+        height: 170px;
+    }
+
+    table,
+    td,
+    th {
+        border-collapse: collapse;
+        border: 1.5px solid;
+        padding: 15px;
+        font-size: 0.93rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 540px) {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    table img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    table,
+    td,
+    th {
+        border-collapse: collapse;
+        border: 1px solid;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+}
