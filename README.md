@@ -1,5 +1,5 @@
 <center>
-<img src="mdImg\mainlogo.png" height="70">
+<img src="img/logo1.png" height="70">
 <span style="color:skyblue">
 <h1><b>탈출! 거북목</b></h1>
 </span>
