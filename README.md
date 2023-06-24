@@ -4,7 +4,7 @@
 <h1><b>탈출! 거북목</b></h1>
 </span>
 
-<a url="https://fascinating-daffodil-fee3b7.netlify.app/">
+<a href="https://fascinating-daffodil-fee3b7.netlify.app/">
 <span style="color:gray">웹사이트 보러가기</span>
 </a>
 </center>
@@ -37,8 +37,8 @@
 <br><br>
 
 ## __⭐ | 실행 방법__<br>
-1. (경로)에 들어가 메인 페이지인 <b>index.html</b>을 실행한다.<br><br>
-2. <b>출석체크</b>를 클릭하면 캘린더에 출석체크 표시가 된다.<br><br>
+1. <b>https://fascinating-daffodil-fee3b7.netlify.app/</b>에 들어가 메인 페이지를 실행한다.<br><br>
+2. <b>출석체크</b>를 클릭하면 캘린더에 출석체크가 표시된다.<br><br>
 3. 스트레칭 방법을 알고 싶다면 오른쪽 상단의 체조하는 사람 모양의 버튼을 눌러 스트레칭하고 싶은 신체를 선택한다.<br><br>
 4. <b>신체 선택 화면</b>으로 넘어가 원하는 신체를 선택한다.<br> <br>
 5. 선택한 후 화면에 설명되어 있는 <b>스트레칭 방법</b>을 따라한다.<br><br>
